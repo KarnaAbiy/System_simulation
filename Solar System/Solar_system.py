@@ -11,6 +11,10 @@ YELLOW = (255, 255, 0)
 BLUE = (100, 149, 237)
 RED = (188, 39, 50)
 DARK_GREY = (80, 78, 81)
+LIGHTBLUE = (20, 50, 100)
+GREEN = (20, 80, 20)
+BROWN = (96, 64, 38)
+CREAM = (100, 82, 71)
 
 class Planet:
 	AU =  (149.6e4 * 1000)
@@ -53,7 +57,15 @@ def main():
 
 	venus = Planet(0.723 * Planet.AU, 0, 14, WHITE, 4.8685 * 10**24)
 
-	planets = [sun, earth, mars, mercury, venus]
+	neptune = Planet(2 * Planet.AU, 0, 10, LIGHTBLUE, 1.02 * 10**21)
+
+	uranus = Planet(1.75 * Planet.AU, 0, 8, GREEN, 8.6 * 10**21)
+
+	jupyter = Planet(1.1 * Planet.AU, 0, 20, BROWN, 1800.6*10**21)
+	
+	saturn = Planet(1.45 * Planet.AU, 0, 15, CREAM, 568.4*10**21)
+
+	planets = [sun, earth, mars, mercury, venus, neptune, uranus, jupyter, saturn ]
 
 	while run:
 		clock.tick(60)
